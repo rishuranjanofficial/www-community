@@ -3,7 +3,7 @@
 layout: col-sidebar
 title: Content Spoofing
 author: 
-contributors: 
+contributors: [Rishu Ranjan](https://github.com/rishuranjanofficial/)
 permalink: /attacks/Content_Spoofing
 tags: attack, Content Spoofing
 auto-migrated: 1
@@ -15,7 +15,7 @@ auto-migrated: 1
 ## Description
 
 Content spoofing, also referred to as *content injection*, "arbitrary
-text injection" or *virtual defacement*, is an attack targeting a user
+text injection", "Text Based Injection" or *virtual defacement*, is an attack targeting a user
 made possible by an injection vulnerability in a web application. When
 an application does not properly handle user-supplied data, an attacker
 can supply content to a web application, typically via a parameter
@@ -25,6 +25,8 @@ This attack is typically used as, or in conjunction with, social
 engineering because the attack is exploiting a code-based vulnerability
 and a user's trust. As a side note, this attack is widely misunderstood
 as a kind of bug that brings no impact.
+
+> Attack Type: Client-Side 
 
 ## Risk Factors
 
@@ -50,6 +52,13 @@ An attacker compromised social accounts which have thousands of
 followers and distribute misleading Content Spoofing payload via
 Twitter/Facebook/Instagram/ similar popular channel. This will lead
 media to assume news is correct and create headline stories.
+
+## Audit Guideline
+
+Text injection can be easily found where
+- User input via parameter or directly in the URL is reflected in the page response.
+- Content-Type: text/plain
+- Application is giving default error pages
 
 ## Applicable Industries
 
